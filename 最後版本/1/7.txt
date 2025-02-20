@@ -1,55 +1,4 @@
-<!--是誰偷看.........🫣🧐-->
-<!-- 以下為.HTML原程式碼
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>魚Sayn's App模擬器安裝</title>
-</head>
-<body>
-    <h1>MIT-Android模擬器安裝<br>文本操作說明</h1>
-    <p><strong>*只適用於Windows系統</strong></p>
-    <h2>單機版:</h2>
-    <ul>
-        <li><strong>STEP 1:</li></strong><p>下載連接中的壓縮檔(App安裝.7z)👇並解壓縮檔案</p>
-        <p><a href="https://drive.google.com/drive/folders/16kNAopfAryTNUfOMEUiEAxfoqy_tFMzH" target="_blank">點擊前往網站 </a></p>
-        <li><strong>STEP 2:</strong><br><p>分別運行兩個執行檔進行安裝</p></li>
-        <li><strong>STEP 3:</strong><br>
-            下載擴充功能👇(Android Design.bat)和ICOM<br>
-            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1339986707088670740/Android_Design.bat?ex=67b0b75e&is=67af65de&hm=0c5dea0c72e6df2dc3a265d7d9986018e43e0d9a776c32b6a2cc0c0549dd64ae&" download>下載 Android Design.bat</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1340343287558443049/fyv6p-8hygh-001.ico?ex=67b20376&is=67b0b1f6&hm=6885d3848de46718627c43f30c2bd1cb7381656ce3ab09d08efd35931d870f6c&" download>下載 ICOM</a>
-        </li>
-        <li><strong>Final STEP:</strong><br>要開始使用App-Inventor時,只需執行Android Design.bat檔即可使用</strong></li>
-    </ul>
-      
-    <h2>MIT線上版：</h2>
-  
-    <ul>
-        <li><strong>STEP 1:</strong></li>
-    </ul>
-    <p>下載連接中的官方執行檔👇(aiStarter)</p>
-    
-    <p><a href="https://appinv.us/aisetup_win_30_265.exe"target="_blank">點擊下載安裝檔 </a></p>
-    <ul>
-        <li><strong>STEP 2:</strong><br>確保在Windows功能中開啟Hyper-V
-            <li><strong>STEP 3:</strong><br>安裝剛剛下載完的aiStarter
-            <li><strong>STEP 4:</strong><br> 在瀏覽器上瀏覽官方網頁https://appinventor.mit.edu/之後就可以登入使用了<br>（建議使用火狐、Google Chrome瀏覽器進行模擬)</li>
-            <p><a href="https://appinventor.mit.edu/" target="_blank">前往官方網站 </a></p>
-    </ul>
-  <h2><a href="xxxxxxx" target="_blank">Youtube安裝教學 </a></h2>  
-  <h2><a href="xxxxxxx" target="_blank">Youtube製作過程分享 </a></h2>  
-  <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank">MIT官方介紹網站-線上版下載來源 </a></p>
-  <p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank">Microsoft Activation Scripts工具 </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank">購買官方專業版Win11 </a></p>
-  <p>個人資訊:</p>
-    <p><a href="https://www.youtube.com/@Yu%E3%81%9B%E3%81%BF" target="_blank">Youtube </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/sammy134679258/" target="_blank">Instagram </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/Sammy14798" target="_blank">Github </a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <footer>
-        <p>&copy; 2025 版權所有 - 余勝名</p>
-    </footer>
-</body>
--->
-<!-- 以下為完整網頁程式碼-->
- 
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -84,7 +33,7 @@
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.95);
             border-radius: 25px;
-            box-shadow: 0 8px 32px 0 rgb(67, 136, 226);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
             backdrop-filter: blur(4px);
             padding: 30px;
             overflow: hidden;
@@ -92,64 +41,63 @@
         }
 
         h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.5em;
-            background: linear-gradient(45deg, #f6d365, #fda085, #fbc2eb);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: shine 3s linear infinite;
-            padding: 10px;
-        }
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #f6d365, #fda085, #fbc2eb);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+    padding: 10px;
+}
 
-        @keyframes shine {
-            to {
-                background-position: 200% center;
-            }
-        }
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
 
-        h1 { 
-            background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: 2.5rem;
-            text-align: center;
-            margin: 20px 0;
-            padding: 10px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 1);
-            animation: titleGlow 8s infinite alternate;
-        }
+h1 { 
+    background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 1);
+    animation: titleGlow 8s infinite alternate;
+}
 
-        @keyframes titleGlow {
-            0% {
-                background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
-                text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.4);
-            }
-            50% {
-                background-image: linear-gradient(135deg, #FFB6C1 50%, #87CEEB 50%);
-                text-shadow: 0 0 10px rgba(255, 182, 193, 1), 0 0 20px rgba(255, 182, 193, 0.4);
-            }
-            100% {
-                background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
-                text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.4);
-            }
-        }
+@keyframes titleGlow {
+    0% {
+        background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+        text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.5);
+    }
+    50% {
+        background-image: linear-gradient(135deg, #FFB6C1 50%, #87CEEB 50%);
+        text-shadow: 0 0 10px rgba(255, 182, 193, 1), 0 0 20px rgba(255, 182, 193, 0.5);
+    }
+    100% {
+        background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+        text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.5);
+    }
+}
+
+
+
+
 
         h2 {
-            color: #7bd697;
+            color: #6c5ce7;
             margin: 20px 0;
             padding: 10px;
             border-left: 5px solid #a8e6cf;
             font-weight: 600;
             letter-spacing: 0.5px;
-        }
-
-        h3 {
-            color: red;
-            font-size: 25px;
         }
 
         .content-wrapper {
@@ -230,16 +178,15 @@
             margin: 8px;
             font-weight: 600;
             letter-spacing: 0.5px;
-            box-shadow: 4px 4px 10px rgba(168, 230, 207, 0.6), -4px -4px 10px rgba(220, 237, 193, 0.6);
         }
 
         a:hover {
             transform: translateY(-3px);
-            box-shadow: 4px 4px 20px rgba(168, 230, 207, 0.8), -4px -4px 20px rgba(220, 237, 193, 0.8);
+            box-shadow: 0 7px 15px rgba(0,0,0,0.2);
         }
 
-        a[href="drive.google.com"],
-        a[href="appinv.us"],
+        a[href*="drive.google.com"],
+        a[href*="appinv.us"],
         a[href*="appinventor.mit.edu"] {
             background: linear-gradient(45deg, #a8e6cf, #dcedc1);
             color: #3d3d3d;
@@ -248,66 +195,6 @@
         a[href*="download"] {
             background: linear-gradient(45deg, #ffd3b6, #ffaaa5);
             color: #3d3d3d;
-        }
-
-        /* 新按鈕樣式 - YouTube教學 */
-        .youtube-btn {
-            background: linear-gradient(45deg, #FF0000, #FF5C5C);
-            color: white;
-            padding: 12px 22px;
-            border-radius: 12px;
-            display: inline-flex;
-            align-items: center;
-            margin: 12px 0;
-            font-size: 1.2em;
-            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.25);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            border: none;
-        }
-
-        .youtube-btn:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-            transition: 0.5s;
-        }
-
-        .youtube-btn:hover:before {
-            left: 100%;
-        }
-
-        .youtube-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.35);
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-        }
-
-        /* 新按鈕樣式 - MIT官方 */
-        .mit-btn {
-            background: linear-gradient(45deg, #2196F3, #21CBF3);
-            color: white;
-            padding: 12px 22px;
-            border-radius: 8px;
-            display: inline-flex;
-            align-items: center;
-            margin: 12px 0;
-            font-size: 1.1em;
-            box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
-            transition: all 0.3s ease;
-            border-left: 4px solid #0D47A1;
-            font-weight: 600;
-        }
-
-        .mit-btn:hover {
-            transform: translateX(5px);
-            box-shadow: 0 8px 16px rgba(33, 150, 243, 0.35);
-            background: linear-gradient(45deg, #1E88E5, #00B0FF);
         }
 
         .social-links {
@@ -349,7 +236,7 @@
         footer {
             text-align: center;
             margin-top: 30px;
-            color: #3d3d3d;
+            color: #6c5ce7;
             font-weight: 500;
         }
 
@@ -372,18 +259,15 @@
                 padding: 8px 16px;
                 margin: 5px;
             }
-            .youtube-btn, .mit-btn {
-                padding: 10px 18px;
-                font-size: 1em;
-            }
         }
     </style>
 </head>
 <body>
+    <!-- HTML 內容保持不變，僅更新樣式 -->
     <div class="container">
         <h1>MIT-Android模擬器安裝<br>文本操作說明</h1>
         <p><strong>*只適用於Windows系統</strong></p>
-
+        
         <div class="content-wrapper">
             <div class="section">
                 <h2>單機版:</h2>
@@ -399,7 +283,7 @@
                         <p>下載擴充功能👇(Android Design.bat)和ICOM</p>
                         <p>
                             <a href="https://cdn.discordapp.com/attachments/833163319702454275/1339986707088670740/Android_Design.bat?ex=67b0b75e&is=67af65de&hm=0c5dea0c72e6df2dc3a265d7d9986018e43e0d9a776c32b6a2cc0c0549dd64ae&" download>下載 Android Design.bat</a>
-                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1340343287558443049/fyv6p-8hygh-001.ico?ex=67b74976&is=67b5f7f6&hm=50033723ff2d44eb0c3a46167fbd7d55d67a1f58e9d4d83982c4e7a42c627c4d&" download>下載 ICOM</a>
+                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1340343287558443049/fyv6p-8hygh-001.ico?ex=67b20376&is=67b0b1f6&hm=6885d3848de46718627c43f30c2bd1cb7381656ce3ab09d08efd35931d870f6c&" download>下載 ICOM</a>
                         </p>
                     </li>
                     <li><strong>Final STEP:</strong>
@@ -430,18 +314,9 @@
         </div>
 
         <div class="section">
-            <!-- 更新的YouTube教學按鈕 -->
-            <h3><a href="xxxxxxx" target="_blank" class="youtube-btn">
-                <span>▶ Youtube安裝教學</span>
-            </a></h3>
-            
-            <h3><a href="xxxxxxx" target="_blank" class="youtube-btn">
-                <span>▶ Youtube製作過程分享</span>
-            </a></h3>
-            
-            <!-- 更新的MIT官方按鈕 -->
-            <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank" class="mit-btn">MIT官方介紹網站-線上版下載來源</a></p>
-            
+            <h2><a href="xxxxxxx" target="_blank">Youtube安裝教學</a></h2>
+            <h2><a href="xxxxxxx" target="_blank">Youtube製作過程分享</a></h2>
+            <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank">MIT官方介紹網站-線上版下載來源</a></p>
             <p>
                 <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank">Microsoft Activation Scripts工具</a>
                 <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank">購買官方專業版Win11</a>
@@ -461,3 +336,4 @@
     </div>
 </body>
 </html>
+
