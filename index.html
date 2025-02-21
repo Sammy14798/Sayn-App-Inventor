@@ -49,7 +49,7 @@
 </body>
 -->
 <!-- 以下為完整網頁程式碼-->
- 
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -92,6 +92,8 @@
         }
 
         h1 {
+            background-image:url("ai-with-mitai.png");
+            background-repeat: no-repeat;
             text-align: center;
             margin-bottom: 30px;
             font-size: 2.5em;
@@ -111,6 +113,7 @@
 
         h1 { 
             background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+          
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 2.5rem;
@@ -298,16 +301,62 @@
             align-items: center;
             margin: 12px 0;
             font-size: 1.1em;
-            box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
+            box-shadow: 0 6px 12px rgba(157, 192, 122);/*按鈕陰影*/
             transition: all 0.3s ease;
-            border-left: 4px solid #0D47A1;
+            border-left: 4px solid #92c46300;/*左側邊邊*/
             font-weight: 600;
         }
 
         .mit-btn:hover {
-            transform: translateX(5px);
-            box-shadow: 0 8px 16px rgba(33, 150, 243, 0.35);
-            background: linear-gradient(45deg, #1E88E5, #00B0FF);
+            transform: translateX(5px);/*作用：將 .mit-btn 按鈕向右平移 5 像素。說明：translateX(5px) 代表沿著 X 軸（水平）向右移動 5 像素。*/
+            box-shadow: 0 8px 16px rgba(230, 164, 42, 0.969); /*滑鼠按下去時陰影顏色變化-45deg：漸變角度（從左上到右下）。*/
+            background: linear-gradient(45deg, #ffd395, #fea62a); /*滑鼠按下去時按鈕背景顏色從左變化到右-漸層效果*/
+        }
+        
+        /* 新增為Win11購買按鈕設定背景圖片 */
+        .win11-btn {
+            background-image: url("111.jpg");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .win11-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* 新增為MAS工具按鈕設定背景圖片 */
+        .mas-btn {
+            background-image: url("222.jpg");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .mas-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
         }
 
         .social-links {
@@ -382,25 +431,21 @@
 <body>
     <div class="container">
         <h1>MIT-Android模擬器安裝<br>文本操作說明</h1>
-        <p><strong>*只適用於Windows系統</strong></p>
+        <p><strong>❗只適用於Windows系統</strong></p>
 
         <div class="content-wrapper">
             <div class="section">
                 <h2>單機版:</h2>
                 <ul>
                     <li><strong>STEP 1:</strong>
-                        <p>下載連接中的壓縮檔(App安裝.7z)👇並解壓縮檔案</p>
-                        <p><a href="https://drive.google.com/drive/folders/16kNAopfAryTNUfOMEUiEAxfoqy_tFMzH" target="_blank">點擊前往網站</a></p>
+                        <p>下載連接中的所有壓縮檔(App安裝.7z)&(擴充功能.7z)👇並解壓縮檔案</p>
+                        <p><a href="https://drive.google.com/drive/folders/1ukgjJ08pZWd5OVuSxqylC-6T7ikbRZzg" target="_blank">點擊前往網站</a></p>
                     </li>
                     <li><strong>STEP 2:</strong>
-                        <p>分別運行兩個執行檔進行安裝</p>
+                        <p>分別運行 App安裝 中的兩個執行檔(.exe)進行安裝</p>
                     </li>
                     <li><strong>STEP 3:</strong>
-                        <p>下載擴充功能👇(Android Design.bat)和ICOM</p>
-                        <p>
-                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1339986707088670740/Android_Design.bat?ex=67b0b75e&is=67af65de&hm=0c5dea0c72e6df2dc3a265d7d9986018e43e0d9a776c32b6a2cc0c0549dd64ae&" download>下載 Android Design.bat</a>
-                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1340343287558443049/fyv6p-8hygh-001.ico?ex=67b74976&is=67b5f7f6&hm=50033723ff2d44eb0c3a46167fbd7d55d67a1f58e9d4d83982c4e7a42c627c4d&" download>下載 ICOM</a>
-                        </p>
+                        <p>下載擴充功能中的批次檔(Android Design.bat)放在自己喜歡的位置,若覺得不明顯,可用Icom當捷徑圖標使用</p>
                     </li>
                     <li><strong>Final STEP:</strong>
                         <p>要開始使用App-Inventor時,只需執行Android Design.bat檔即可使用</p>
@@ -422,7 +467,7 @@
                         <p>安裝剛剛下載完的aiStarter</p>
                     </li>
                     <li><strong>STEP 4:</strong>
-                        <p>在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>
+                        <p>確保aiStarter開啟後,在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>
                         <p><a href="https://appinventor.mit.edu/" target="_blank">前往官方網站</a></p>
                     </li>
                 </ul>
@@ -443,8 +488,8 @@
             <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank" class="mit-btn">MIT官方介紹網站-線上版下載來源</a></p>
             
             <p>
-                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank">Microsoft Activation Scripts工具</a>
-                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank">購買官方專業版Win11</a>
+                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" class="mas-btn">Microsoft Activation Scripts工具</a>
+                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank" class="win11-btn">購買官方專業版Win11</a>
             </p>
         </div>
 
@@ -458,6 +503,7 @@
         <footer>
             <p>&copy; 2025 版權所有 - 余勝名</p>
         </footer>
+        <img src="C:\Users\User\Desktop\Test\APP 安裝\App-Install">
     </div>
 </body>
 </html>
