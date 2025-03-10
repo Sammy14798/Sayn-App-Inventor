@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<!-- [前面的 head 標籤和其他 style 保持不變] -->
+<style>
+    /* [保留之前的所有樣式，只更新以下部分] */
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+        background: linear-gradient(to right, #FF69B4, #7B68EE, #00CED1, #FF69B4);
+        background-size: 300% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: smoothGradient 6s linear infinite;
+        padding: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    @keyframes smoothGradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* 修改 Youtube 相關連結的樣式 */
+    h2 a[href*="xxxxxxx"] {
+        display: block;
+        padding: 15px 25px;
+        margin: 15px 0;
+        background: linear-gradient(45deg, #ff0000, #ff5555);
+        color: white;
+        border-radius: 12px;
+        transform-origin: left center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
+    }
+
+    h2 a[href*="xxxxxxx"]::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: 0.5s;
+    }
+
+    h2 a[href*="xxxxxxx"]:hover {
+        transform: scale(1.05) translateX(10px);
+        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.3);
+    }
+
+    h2 a[href*="xxxxxxx"]:hover::before {
+        left: 100%;
+        transition: 0.5s;
+    }
+
+    /* 修改左側框架為實線 */
+    .section:first-child {
+        border: 2px solid #ffb6c1;
+        background: rgba(255, 222, 235, 0.4);
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .section:first-child:hover {
+        border-color: #ff8da1;
+        transform: scale(1.02);
+        background: rgba(255, 222, 235, 0.6);
+        box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    }
+
+    /* 為標題加入發光效果 */
+    h1::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+    }
+
+    h1:hover::after {
+        width: 120%;
+        height: 300%;
+    }
+</style>
+</head>
+<body>
+    <!-- HTML 內容保持不變，僅更新樣式 -->
+    <div class="container">
+        <h1>MIT-Android模擬器安裝<br>文本操作說明</h1>
+        <p><strong>*只適用於Windows系統</strong></p>
+        
+        <div class="content-wrapper">
+            <div class="section">
+                <h2>單機版:</h2>
+                <ul>
+                    <li><strong>STEP 1:</strong>
+                        <p>下載連接中的壓縮檔(App安裝.7z)👇並解壓縮檔案</p>
+                        <p><a href="https://drive.google.com/drive/folders/16kNAopfAryTNUfOMEUiEAxfoqy_tFMzH" target="_blank">點擊前往網站</a></p>
+                    </li>
+                    <li><strong>STEP 2:</strong>
+                        <p>分別運行兩個執行檔進行安裝</p>
+                    </li>
+                    <li><strong>STEP 3:</strong>
+                        <p>下載擴充功能👇(Android Design.bat)和ICOM</p>
+                        <p>
+                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1339986707088670740/Android_Design.bat?ex=67b0b75e&is=67af65de&hm=0c5dea0c72e6df2dc3a265d7d9986018e43e0d9a776c32b6a2cc0c0549dd64ae&" download>下載 Android Design.bat</a>
+                            <a href="https://cdn.discordapp.com/attachments/833163319702454275/1340343287558443049/fyv6p-8hygh-001.ico?ex=67b20376&is=67b0b1f6&hm=6885d3848de46718627c43f30c2bd1cb7381656ce3ab09d08efd35931d870f6c&" download>下載 ICOM</a>
+                        </p>
+                    </li>
+                    <li><strong>Final STEP:</strong>
+                        <p>要開始使用App-Inventor時,只需執行Android Design.bat檔即可使用</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>MIT線上版：</h2>
+                <ul>
+                    <li><strong>STEP 1:</strong>
+                        <p>下載連接中的官方執行檔👇(aiStarter)</p>
+                        <p><a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a></p>
+                    </li>
+                    <li><strong>STEP 2:</strong>
+                        <p>確保在Windows功能中開啟Hyper-V</p>
+                    </li>
+                    <li><strong>STEP 3:</strong>
+                        <p>安裝剛剛下載完的aiStarter</p>
+                    </li>
+                    <li><strong>STEP 4:</strong>
+                        <p>在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>
+                        <p><a href="https://appinventor.mit.edu/" target="_blank">前往官方網站</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><a href="xxxxxxx" target="_blank">Youtube安裝教學</a></h2>
+            <h2><a href="xxxxxxx" target="_blank">Youtube製作過程分享</a></h2>
+            <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank">MIT官方介紹網站-線上版下載來源</a></p>
+            <p>
+                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank">Microsoft Activation Scripts工具</a>
+                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank">購買官方專業版Win11</a>
+            </p>
+        </div>
+
+        <div class="social-links">
+            <p>個人資訊:</p>
+            <a href="https://www.youtube.com/@Yu%E3%81%9B%E3%81%BF" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/sammy134679258/" target="_blank">Instagram</a>
+            <a href="https://github.com/Sammy14798" target="_blank">Github</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 版權所有 - 余勝名</p>
+        </footer>
+    </div>
+</body>
+</html>

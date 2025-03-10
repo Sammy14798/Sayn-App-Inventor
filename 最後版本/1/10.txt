@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魚Sayn's App模擬器安裝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', 'Microsoft JhengHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            padding: 20px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            box-shadow: 0 8px 32px 0 rgb(67, 136, 226);
+            backdrop-filter: blur(4px);
+            padding: 30px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        h1 {
+            background-image:url("ai-with-mitai.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #f6d365, #fda085, #fbc2eb);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+            padding: 10px;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        h1 { 
+            background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+          
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 1);
+            animation: titleGlow 8s infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% {
+                background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+                text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.4);
+            }
+            50% {
+                background-image: linear-gradient(135deg, #FFB6C1 50%, #87CEEB 50%);
+                text-shadow: 0 0 10px rgba(255, 182, 193, 1), 0 0 20px rgba(255, 182, 193, 0.4);
+            }
+            100% {
+                background-image: linear-gradient(135deg, #87CEEB 50%, #FFB6C1 50%);
+                text-shadow: 0 0 5px rgba(135, 206, 235, 1), 0 0 10px rgba(135, 206, 235, 0.4);
+            }
+        }
+
+        h2 {
+            color: #7bd697;
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 5px solid #a8e6cf;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            color: red;
+            font-size: 25px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .content-wrapper {
+                flex-direction: row;
+            }
+            .section {
+                flex: 1;
+                padding: 20px;
+            }
+        }
+
+        /* 單機版特效 */
+        .section:first-child {
+            background: rgba(255, 222, 235, 0.4);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid #ffb6c1;
+        }
+
+        .section:first-child:hover {
+            transform: scale(1.02);
+            background: rgba(255, 222, 235, 0.6);
+            box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+        }
+
+        /* MIT線上版特效 */
+        .section:nth-child(2) {
+            background: rgba(208, 242, 255, 0.4);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid #87ceeb;
+        }
+
+        .section:nth-child(2):hover {
+            transform: translateY(-10px);
+            background: rgba(208, 242, 255, 0.6);
+            box-shadow: 0 15px 30px rgba(135, 206, 235, 0.3);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            font-size: 1.1em;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            display: inline-block;
+            margin: 8px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            box-shadow: 4px 4px 10px rgba(168, 230, 207, 0.6), -4px -4px 10px rgba(220, 237, 193, 0.6);
+        }
+
+        a:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgba(168, 230, 207, 0.8), -4px -4px 20px rgba(220, 237, 193, 0.8);
+        }
+
+        a[href="drive.google.com"],
+        a[href="appinv.us"],
+        a[href*="appinventor.mit.edu"] {
+            background: linear-gradient(45deg, #a8e6cf, #dcedc1);
+            color: #3d3d3d;
+        }
+
+        a[href*="download"] {
+            background: linear-gradient(45deg, #ffd3b6, #ffaaa5);
+            color: #3d3d3d;
+        }
+
+        /* 新按鈕樣式 - YouTube教學 */
+        .youtube-btn {
+            background: linear-gradient(45deg, #FF0000, #FF5C5C);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            margin: 12px 0;
+            font-size: 1.2em;
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.25);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+        }
+
+        .youtube-btn:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .youtube-btn:hover:before {
+            left: 100%;
+        }
+
+        .youtube-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 0, 0, 0.35);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        /* 新按鈕樣式 - MIT官方 */
+        .mit-btn {
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 12px 0;
+            font-size: 1.1em;
+            box-shadow: 0 6px 12px rgba(157, 192, 122);/*按鈕陰影*/
+            transition: all 0.3s ease;
+            border-left: 4px solid #a8e6cf;/*左側邊邊*/
+            font-weight: 600;
+        }
+
+        .mit-btn:hover {
+            transform: translateX(5px);/*作用：將 .mit-btn 按鈕向右平移 5 像素。說明：translateX(5px) 代表沿著 X 軸（水平）向右移動 5 像素。*/
+            box-shadow: 0 8px 16px rgba(230, 164, 42, 0.969); /*滑鼠按下去時陰影顏色變化-45deg：漸變角度（從左上到右下）。*/
+            background: linear-gradient(45deg, #ffd395, #fea62a); /*滑鼠按下去時按鈕背景顏色從左變化到右-漸層效果*/
+            border-left: 4px solid #ffd395;
+        }
+        
+        /* 新增為Win11購買按鈕設定背景圖片 */
+        .win11-btn {
+            background-image: url("111.jpg");
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+        .win11-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgba(9, 132, 255, 0.854);
+        }
+        
+        /* 新增為MAS工具按鈕設定背景圖片 */
+        .mas-btn {
+            background-image: url("333.png");
+            background-position: center;
+            background-size: cover;
+            color: rgb(255, 252, 252);
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgb(61, 67, 74);/*原始陰影顏色*/
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(63, 60, 60, 0.484);
+        }
+        
+        .mas-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgb(255, 213, 0);/*滑鼠放上去後的陰影顏色*/
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        .social-links a:hover {
+            animation: wobble 0.8s ease;
+        }
+
+        @keyframes wobble {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px) rotate(-5deg); }
+            75% { transform: translateX(5px) rotate(5deg); }
+        }
+
+        .social-links a[href*="youtube"] {
+            background: #ff0000;
+            color: white;
+        }
+
+        .social-links a[href*="instagram"] {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+            color: white;
+        }
+
+        .social-links a[href*="github"] {
+            background: #24292e;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #3d3d3d;
+            font-weight: 500;
+        }
+
+        strong {
+            color: #ff758c;
+            font-weight: 700;
+        }
+
+        @media (max-width: 767px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .section {
+                margin: 10px 0;
+            }
+            a {
+                padding: 8px 16px;
+                margin: 5px;
+            }
+            .youtube-btn, .mit-btn {
+                padding: 10px 18px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MIT-Android模擬器安裝<br>文本操作說明</h1>
+        <p><strong>❗只適用於Windows系統</strong></p>
+
+        <div class="content-wrapper">
+            <div class="section">
+                <h2>單機版:</h2>
+                <ul>
+                    <li><strong>STEP 1:</strong>
+                        <p>下載連接中的所有壓縮檔(App安裝.7z)&(擴充功能.7z)👇並解壓縮檔案</p>
+                        <p><a href="https://drive.google.com/drive/folders/1ukgjJ08pZWd5OVuSxqylC-6T7ikbRZzg" target="_blank">點擊前往網站</a></p>
+                    </li>
+                    <li><strong>STEP 2:</strong>
+                        <p>分別運行 App安裝 中的兩個執行檔(.exe)進行安裝</p>
+                    </li>
+                    <li><strong>STEP 3:</strong>
+                        <p>下載擴充功能中的批次檔(Android Design.bat)放在自己喜歡的位置,若覺得圖標圖標不明顯,可用Icom當捷徑圖標使用</p>
+                    </li>
+                    <li><strong>Final STEP:</strong>
+                        <p>要開始使用App-Inventor時,只需執行Android Design.bat檔即可使用</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>MIT線上版：</h2>
+                <ul>
+                    <li><strong>STEP 1:</strong>
+                        <p>下載連接中的官方執行檔👇(aiStarter)</p>
+                        <p><a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a></p>
+                    </li>
+                    <li><strong>STEP 2:</strong>
+                        <p>確保在Windows功能中開啟Hyper-V</p>
+                    </li>
+                    <li><strong>STEP 3:</strong>
+                        <p>安裝剛剛下載完的aiStarter</p>
+                    </li>
+                    <li><strong>STEP 4:</strong>
+                        <p>確保aiStarter開啟後,在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>
+                        <p><a href="https://appinventor.mit.edu/" target="_blank">前往官方網站</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <!-- 更新的YouTube教學按鈕 -->
+            <h3><a href="xxxxxxx" target="_blank" class="youtube-btn">
+                <span>▶ Youtube安裝教學</span>
+            </a></h3>
+            
+            <h3><a href="xxxxxxx" target="_blank" class="youtube-btn">
+                <span>▶ Youtube製作過程分享</span>
+            </a></h3>
+            
+            <!-- 更新的MIT官方按鈕 -->
+            <!--<p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank" class="mit-btn">MIT官方介紹網站-線上版下載來源</a></p>-->
+            
+            <p>
+                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" class="mas-btn"><strong>Microsoft Activation Scripts</strong></a>
+                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank" class="win11-btn">購買微軟專業版Win11</a>
+            </p>
+        </div>
+
+        <div class="social-links">
+            <p>個人資訊:</p>
+            <a href="https://www.youtube.com/@Yu%E3%81%9B%E3%81%BF" target="_blank">Youtube</a>
+            <a href="https://www.instagram.com/sammy134679258/" target="_blank">Instagram</a>
+            <a href="https://github.com/Sammy14798/Sayn-App-Inventor" target="_blank">Github</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Producer - 余勝名</p>
+        </footer>
+    </div>
+</body>
+</html>

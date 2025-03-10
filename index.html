@@ -408,6 +408,13 @@
             font-weight: 700;
         }
 
+        /* 新增按鈕排列樣式 */
+        .button-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
         @media (max-width: 767px) {
             .container {
                 padding: 15px;
@@ -426,6 +433,10 @@
                 padding: 10px 18px;
                 font-size: 1em;
             }
+            .button-row {
+                flex-direction: column;
+                gap: 5px;
+            }
         }
     </style>
 </head>
@@ -436,7 +447,8 @@
 
         <div class="content-wrapper">
             <div class="section">
-                <h2>單機版:</h2>
+                <h2>基礎單機版:<br></h2>
+                
                 <ul>
                     <li><strong>STEP 1:</strong>
                         <p>下載連接中的所有壓縮檔(App安裝.7z)&(擴充功能.7z)👇並解壓縮檔案</p>
@@ -455,11 +467,14 @@
             </div>
 
             <div class="section">
-                <h2>MIT線上版：</h2>
+                <h2>高階MIT線上版：</h2>
                 <ul>
                     <li><strong>STEP 1:</strong>
                         <p>下載連接中的官方執行檔👇(aiStarter)</p>
-                        <p><a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a></p>
+                        <div class="button-row">
+                            <a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a>
+                            <a href="https://appinventor.mit.edu/explore/ai2/mac" target="_blank">MacOS安裝參考文章</a>
+                        </div>
                     </li>
                     <li><strong>STEP 2:</strong>
                         <p>確保在Windows功能中關閉Hyper-V</p>
@@ -469,7 +484,7 @@
                         <p><a href="https://developer.android.com/studio?hl=zh-tw" target="_blank">前往Android Developers</a></p>
                     </li>
                     <li><strong>STEP 4:</strong>
-                        <p>安裝剛剛下載完的aiStarter</p>
+                        <p>安裝剛剛下載完的aiStarter</p> 
                     </li>
                     <li><strong>STEP 5:</strong>
                         <p>確保aiStarter開啟後,在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>

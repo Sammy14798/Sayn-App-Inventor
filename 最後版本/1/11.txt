@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -251,7 +252,7 @@
             font-size: 1.1em;
             box-shadow: 0 6px 12px rgba(157, 192, 122);/*按鈕陰影*/
             transition: all 0.3s ease;
-            border-left: 4px solid #92c46300;/*左側邊邊*/
+            border-left: 4px solid #a8e6cf;/*左側邊邊*/
             font-weight: 600;
         }
 
@@ -259,37 +260,53 @@
             transform: translateX(5px);/*作用：將 .mit-btn 按鈕向右平移 5 像素。說明：translateX(5px) 代表沿著 X 軸（水平）向右移動 5 像素。*/
             box-shadow: 0 8px 16px rgba(230, 164, 42, 0.969); /*滑鼠按下去時陰影顏色變化-45deg：漸變角度（從左上到右下）。*/
             background: linear-gradient(45deg, #ffd395, #fea62a); /*滑鼠按下去時按鈕背景顏色從左變化到右-漸層效果*/
+            border-left: 4px solid #ffd395;
         }
-
-        /* 為指定按鈕添加背景圖片 */
-        a[href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4"] {
-            background-image: url('2bc375a59ea8bb65dbd995b77ab56cbc3107a651-scaled.jpg');
-            background-size: cover;
+        
+        /* 新增為Win11購買按鈕設定背景圖片 */
+        .win11-btn {
+            background-image: url("111.jpg");
             background-position: center;
-            color: white;
-            text-shadow: 0 0 4px rgba(0,0,0,0.8);
-            border: 2px solid rgba(255,255,255,0.3);
-            font-weight: bold;
-        }
-
-        a[href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4"]:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
-            border: 2px solid rgba(255,255,255,0.5);
-        }
-
-        a[href="https://github.com/massgravel/Microsoft-Activation-Scripts"] {
-            background-image: url('206868-binary-code-hacking.jpg');
             background-size: cover;
-            background-position: center;
             color: white;
-            text-shadow: 0 0 4px rgba(0,0,0,0.8);
-            font-weight: bold;
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
-
-        a[href="https://github.com/massgravel/Microsoft-Activation-Scripts"]:hover {
+        
+        .win11-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+            box-shadow: 4px 4px 20px rgba(9, 132, 255, 0.854);
+        }
+        
+        /* 新增為MAS工具按鈕設定背景圖片 */
+        .mas-btn {
+            background-image: url("333.png");
+            background-position: center;
+            background-size: cover;
+            color: rgb(255, 252, 252);
+            padding: 12px 22px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            margin: 8px;
+            font-size: 1.1em;
+            box-shadow: 4px 4px 10px rgb(61, 67, 74);/*原始陰影顏色*/
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(63, 60, 60, 0.484);
+        }
+        
+        .mas-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 4px 4px 20px rgb(255, 213, 0);/*滑鼠放上去後的陰影顏色*/
         }
 
         .social-links {
@@ -368,7 +385,8 @@
 
         <div class="content-wrapper">
             <div class="section">
-                <h2>單機版:</h2>
+                <h2>基礎單機版:<br></h2>
+                
                 <ul>
                     <li><strong>STEP 1:</strong>
                         <p>下載連接中的所有壓縮檔(App安裝.7z)&(擴充功能.7z)👇並解壓縮檔案</p>
@@ -378,7 +396,7 @@
                         <p>分別運行 App安裝 中的兩個執行檔(.exe)進行安裝</p>
                     </li>
                     <li><strong>STEP 3:</strong>
-                        <p>下載擴充功能中的批次檔(Android Design.bat)放在自己喜歡的位置,若覺得不明顯,可用Icom當捷徑圖標使用</p>
+                        <p>下載擴充功能中的批次檔(Android Design.bat)放在自己喜歡的位置,若覺得圖標圖標不明顯,可用Icom當捷徑圖標使用</p>
                     </li>
                     <li><strong>Final STEP:</strong>
                         <p>要開始使用App-Inventor時,只需執行Android Design.bat檔即可使用</p>
@@ -387,19 +405,24 @@
             </div>
 
             <div class="section">
-                <h2>MIT線上版：</h2>
+                <h2>高階MIT線上版：</h2>
                 <ul>
                     <li><strong>STEP 1:</strong>
                         <p>下載連接中的官方執行檔👇(aiStarter)</p>
                         <p><a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a></p>
+                        <p><a href="https://appinventor.mit.edu/explore/ai2/mac" target="_blank">MacOS安裝參考資料</a></p>
                     </li>
                     <li><strong>STEP 2:</strong>
-                        <p>確保在Windows功能中開啟Hyper-V</p>
+                        <p>確保在Windows功能中關閉Hyper-V</p>
                     </li>
                     <li><strong>STEP 3:</strong>
-                        <p>安裝剛剛下載完的aiStarter</p>
+                        <p>下載Android Studio並安裝SDK組件</p>
+                        <p><a href="https://developer.android.com/studio?hl=zh-tw" target="_blank">前往Android Developers</a></p>
                     </li>
                     <li><strong>STEP 4:</strong>
+                        <p>安裝剛剛下載完的aiStarter</p>
+                    </li>
+                    <li><strong>STEP 5:</strong>
                         <p>確保aiStarter開啟後,在瀏覽器上瀏覽官方網頁並登入使用（建議使用火狐、Google Chrome瀏覽器進行模擬)</p>
                         <p><a href="https://appinventor.mit.edu/" target="_blank">前往官方網站</a></p>
                     </li>
@@ -418,11 +441,11 @@
             </a></h3>
             
             <!-- 更新的MIT官方按鈕 -->
-            <p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank" class="mit-btn">MIT官方介紹網站-線上版下載來源</a></p>
+            <!--<p><a href="https://appinventor.mit.edu/explore/ai2/windows" target="_blank" class="mit-btn">MIT官方介紹網站-線上版下載來源</a></p>-->
             
             <p>
-                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank">Microsoft Activation Scripts工具</a>
-                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank">購買官方專業版Win11</a>
+                <a href="https://github.com/massgravel/Microsoft-Activation-Scripts" target="_blank" class="mas-btn"><strong>Microsoft Activation Scripts</strong></a>
+                <a href="https://www.microsoft.com/zh-tw/d/windows-11-專業版/dg7gmgf0d8h4" target="_blank" class="win11-btn">購買微軟專業版Win11</a>
             </p>
         </div>
 
@@ -430,11 +453,11 @@
             <p>個人資訊:</p>
             <a href="https://www.youtube.com/@Yu%E3%81%9B%E3%81%BF" target="_blank">Youtube</a>
             <a href="https://www.instagram.com/sammy134679258/" target="_blank">Instagram</a>
-            <a href="https://github.com/Sammy14798" target="_blank">Github</a>
+            <a href="https://github.com/Sammy14798/Sayn-App-Inventor" target="_blank">Github</a>
         </div>
 
         <footer>
-            <p>&copy; 2025 版權所有 - 余勝名</p>
+            <p>&copy; 2025 Producer - 余勝名</p>
         </footer>
     </div>
 </body>
