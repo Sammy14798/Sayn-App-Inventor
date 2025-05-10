@@ -408,7 +408,7 @@
             font-weight: 700;
         }
 
-        /* 新增按鈕排列樣式 */
+        /* 線上版STEP1按鈕: 新增按鈕排列樣式,讓按鈕可以在同一行並有適當的間距   在手機螢幕上，我設定 .button-row 在小螢幕裝置上會變成垂直排列 (flex-direction: column)，確保在手機上也能有好的使用體驗 */
         .button-row {
             display: flex;
             gap: 10px;
@@ -471,7 +471,7 @@
                 <ul>
                     <li><strong>STEP 1:</strong>
                         <p>下載連接中的官方執行檔👇(aiStarter)</p>
-                        <div class="button-row">
+                        <div class="button-row"> <!--兩個按鈕就會在同一行顯示，並在手機上自動調整為垂直排列，保持良好的響應式設計-->
                             <a href="https://appinv.us/aisetup_win_30_265.exe" target="_blank">點擊下載安裝檔</a>
                             <a href="https://appinventor.mit.edu/explore/ai2/mac" target="_blank">MacOS安裝參考文章</a>
                         </div>
