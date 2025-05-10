@@ -1,5 +1,1 @@
 Go back to the original website and watch the video
-MIT官方介紹網站-線上版下載來源   https://appinventor.mit.edu/explore/ai2/windows
-win11圖片  https://www.bing.com/images/search?view=detailV2&ccid=2XOvVG0P&id=15C8B0E0F40023F11D451EF22A958F176ECAA395&thid=OIP.2XOvVG0Pk5KSlB82e-thLQHaEo&mediaurl=https%3A%2F%2Fnews-cdn.softpedia.com%2Fimages%2Fnews2%2Fdownload-the-official-windows-11-wallpaper-533232-2.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.d973af546d0f939292941f367beb612d%3Frik%3DlaPKbhePlSryHg%26pid%3DImgRaw%26r%3D0&exph=2400&expw=3840&q=win11&simid=608012424907734390&FORM=IRPRST&ck=46819DF033CABEFDA868DC13BA21DEEF&selectedIndex=5&itb=0&cw=1436&ch=788&ajaxhist=0&ajaxserp=0
-Microsoft Activation Scripts 圖片  https://external-preview.redd.it/massgrave-now-has-the-win-11-ltsc-isos-on-their-site-the-v0-Psw8OWY79tEKJ2ppVCFokNb9kC0CiaR242iqaOz_v9o.jpg?width=1080&crop=smart&auto=webp&s=4d8205dbf2df85f7f242623299848948895f511c
-謝謝
